@@ -201,6 +201,9 @@ module.exports = {
       // When true, adds --allow-incompatible-updates arg to build command
       allowIncompatibleUpdates: false,
 
+      // Array of build platforms, adds values as comma delimited string to --platforms arg on build command
+      platforms: ['web.browser'],
+
       // Executable used to build the meteor project
       // You can set to a local repo path if needed
       executable: 'meteor'

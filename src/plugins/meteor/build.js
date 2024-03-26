@@ -85,6 +85,11 @@ function createBuildArgs(buildOptions, appPath) {
     args.push('--allow-incompatible-update');
   }
 
+  if (buildOptions.platforms && buildOptions.platforms.length) {
+    args.push('--platforms')
+    args.push(buildOptions.platforms.join(','));
+  }
+
   return args;
 }
 
